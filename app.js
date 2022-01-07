@@ -58,10 +58,24 @@ app.get('/items/:name', (req, res) => {
 // PATCH route: use it to modify the name or price of an item
 // populate html form with original data
 app.patch('/items/;name', (req, res) => {
-    
+
 })
 
+/*
+router.patch("/:username", function(request, response) {
+ var username = request.params.username;
+ var age = Number(request.body.age);
+ var address = request.body.address;
 
+ request.db.get("users").update({'username': username}, {'username': username, 'age': age, 'address': address}, function(error, document) {
+  if (error) console.log(error);
+  response.send('Updated');
+ });
+});
+
+*/
+
+// do delete route here
 
 app.listen(3000, function(){
     console.log("app  is running in the port 3000")
